@@ -15,7 +15,7 @@ def load_eeg_data(file_path):
 # Preprocess EEG data
 
 
-def preprocess_eeg_data(data):
+def preprocess_eeg_data(data):nb
     features = data.iloc[:, :-1]
     labels = data.iloc[:, -1]
     scaler = StandardScaler()

@@ -40,7 +40,7 @@ def extract_features(eeg_data, fs=250, nperseg=512):
 def validate_labels(labels, expected_labels):
     unique_labels = set(labels)
     if not unique_labels.issubset(set(expected_labels)):
-        raise ValueError("Unexpected labels found in the dataset")
+        raise ValueError("Unexpected labels found")
     return labels
 
 # CNN model

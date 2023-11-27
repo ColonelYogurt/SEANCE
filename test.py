@@ -22,7 +22,7 @@ def preprocess_eeg_data(data):
     scaled_features = scaler.fit_transform(features)
     return scaled_features, labels
 
-# Extract features using PSD
+# Extract features using Fast Fourier Transform calculating PSD
 
 # Used Welchs method to calc nperseg
 
